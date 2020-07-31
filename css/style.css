@@ -144,6 +144,55 @@ ol {
   color: #e0e3e4;
 }
 
+#img1 {
+  height: 250px;
+  /* margin-top:-3px; */
+}
+
+#img3 {
+  height: 200px;
+  margin-top: 15px;
+}
+
+.banner-section {
+  background-color: rgb(253, 251, 249);
+}
+
+.team {
+  text-align: center;
+
+  height: 30rem;
+}
+
+.team h2 {
+  font-size: 45px;
+  color: #000;
+  font-family: SF-Black;
+  text-transform: uppercase;
+  margin-top: -4rem;
+}
+
+.team1 {
+  height: 24rem;
+  width: 20rem;
+  border: 1px solid black;
+  margin-top: 2rem;
+  margin-left: 3rem;
+  background-color: white;
+  box-shadow: 10px 10px black;
+  font-weight: 1000px;
+  font-size: 60px;
+}
+#nirbhay {
+  margin-top: 10px;
+}
+#kartik {
+  margin-top: -3rem;
+}
+.team1 h3 {
+  color: black;
+}
+
 /*---------------------
   Commom elements
 -----------------------*/
@@ -161,7 +210,7 @@ ol {
   position: relative;
   color: #fff;
   cursor: pointer;
-  background: rgb(233, 87, 155);
+  background: #d82a4e;
   margin-left: -10rem;
 }
 
@@ -348,20 +397,34 @@ ol {
 
 .categorie-item .ci-text h5 {
   margin-bottom: 5px;
+  text-align: center;
+}
+.categorie-item .ci-text .fa {
+  text-align: center;
 }
 
 .categorie-item .ci-text span {
   font-size: 18px;
   font-weight: 600;
   color: #d82a4e;
+  text-align: center;
 }
 
 .categorie-item:hover {
   background: #d82a4e;
 }
+.ci-thumb img {
+  height: 180px;
+  width: 500px;
+}
+.ci-text a {
+  color: #d82a4e;
+  margin-left: 120px;
+}
 
 .categorie-item:hover .ci-text h5,
 .categorie-item:hover .ci-text p,
+.categorie-item:hover .ci-text a,
 .categorie-item:hover .ci-text span {
   color: #fff;
 }
@@ -594,11 +657,13 @@ ol {
 .signup-section {
   background: #d82a4e;
   position: relative;
+  height: -10rem;
 }
 
 .signup-section .section-title {
   padding: 0;
   margin-bottom: 55px;
+  height: -30rem;
 }
 
 .signup-section .signup-bg {
@@ -661,7 +726,7 @@ ol {
 .signup-form .file-up-btn,
 .contact-form .file-up-btn {
   display: block;
-  background: #3e3e3e;
+  background: black;
   color: #fff;
   max-width: 175px;
   padding: 13px 5px;
@@ -687,17 +752,22 @@ ol {
 ---------------------*/
 
 .footer-section {
-  border-top: 10px solid #d82a4e;
+  border-top: 4px solid #d82a4e;
   text-align: center;
-  margin-bottom: 2rem;
+
+  background-color: black;
+  color: #d82a4e;
+}
+
+.color {
+  color: #d82a4e;
 }
 
 .footer-warp {
-  max-width: 1559px;
+  max-width: 1500;
   padding: 0 15px;
   margin: 0 auto;
   text-align: center;
-  margin-left: 26rem;
   margin-top: -5rem;
 }
 
@@ -707,12 +777,15 @@ ol {
 }
 
 .widget-item h4 {
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
+  color: #d82a4e;
+  font-weight: 1200px;
 }
 
 .widget-item ul {
   list-style: none;
-  padding-top: 30px;
+  padding-top: 10px;
+  margin-bottom: 2rem;
 }
 
 .widget-item ul li {
@@ -727,7 +800,7 @@ ol {
 }
 
 .widget-item ul a {
-  color: #878787;
+  color: white;
 }
 
 .widget-item ul.contact-list li {
@@ -749,32 +822,6 @@ ol {
   top: 6px;
   border-radius: 50%;
   background: #d82a4e;
-}
-
-.footer-newslatter {
-  padding-right: 38px;
-}
-
-.footer-newslatter input[type="email"] {
-  height: 57px;
-  width: 100%;
-  padding: 0 30px;
-  margin-bottom: 27px;
-  float: left;
-  border: none;
-  font-size: 14px;
-  background: #edf4f6;
-}
-
-.footer-newslatter .site-btn {
-  min-width: 143px;
-  margin-bottom: 20px;
-}
-
-.footer-newslatter p {
-  margin-bottom: 0;
-  font-weight: 500;
-  font-style: italic;
 }
 
 .footer-bottom {
@@ -806,25 +853,17 @@ ol {
   display: inline-block;
   font-size: 14px;
   font-weight: 600;
-  color: #474747;
+  /* color: #474747; */
   padding-right: 10px;
   margin-right: 10px;
   position: relative;
 }
 
-.footer-menu li a:after {
-  position: absolute;
-  content: "|";
-  right: 0;
-  top: 0;
-}
-
-.copyright {
-  padding-top: 3px;
-  float: left;
-  font-size: 14px;
-  font-weight: 600;
-  color: #474747;
+.end {
+  height: 2rem;
+  background-color: #d82a4e;
+  text-align: center;
+  color: #000;
 }
 
 /*------------------
