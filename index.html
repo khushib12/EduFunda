@@ -47,8 +47,8 @@
 					</div>
 				</div>
 				<div class="col-lg-9 col-md-9">
-					<a href="" class="site-btn2 header-btn">Login</a>
-					<a href="" class="site-btn header-btn">Sign Up</a>
+					<a href="#" id="button" class="site-btn2 header-btn">Login</a>
+					<a href="index.html#sign" class="site-btn header-btn">Sign Up</a>
 
 					<nav class="main-menu">
 						<ul>
@@ -64,7 +64,30 @@
 		</div>
 	</header>
 	<!-- Header section end -->
+   <!-- popup -->
+<div class="popup">
+	<div class="popup-content">
+		<img src="https://icons.iconarchive.com/icons/hopstarter/sleek-xp-basic/256/Close-2-icon.png" alt="Close"
+			id="close">
+		<input type="text" placeholder="Username">
+		<input type="password" placeholder="Password">
+		<a href="#" id="login" class="button">Login</a>
+	</div>
+</div>
 
+<script>
+	document.getElementById("button").addEventListener("click", function () {
+		document.querySelector(".popup").style.display = "flex";
+	})
+
+	document.getElementById("close").addEventListener("click", function () {
+		document.querySelector(".popup").style.display = "none";
+	})
+		document.getElementById("login").addEventListener("click", function () {
+				document.querySelector(".popup").style.display = "none";
+			})
+</script>
+   <!-- popup end -->
 
 	<!-- Hero section -->
 	<br>
@@ -98,14 +121,12 @@
 
 	<!-- categories section -->
 	<section class="categories-section spad">
-		<div class="container">
-			<div class="section-title">
-				<h2 id="here">Our Course Categories</h2>
-				<br>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris
-					scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus.</p>
+		<div class="sec1 container">
+			<div class=" aboutus section-title">
+				<h2 id="here">Our <span class="colour">Course</span> Categories</h2>
+		
 			</div>
-			<div class="row">
+			<div class="sec row">
 			
 				
 				<!-- categorie -->
@@ -166,17 +187,15 @@
 				<div class="col-lg-6">
 					<div class="signup-warp">
 						<div class="section-title text-white text-left">
-							<h1>Join Us</h1>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus
-								mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus
-								faucibus finibus.</p>
+							<h1 id="sign">Sign Up</h1>
+						
 						</div>
 						<!-- signup form -->
 						<form class="signup-form">
 							<input type="text" placeholder="Your Name">
-							<input type="text" placeholder="Your E-mail">
-							<input type="text" placeholder="Your Phone">
-							<label for="v-upload" class="file-up-btn"> Submit</label>
+							<input type="email" placeholder="Your E-mail">
+							<input type="password" placeholder="Create password">
+							<label for="v-upload" class="file-up-btn"> Signup</label>
 							<input type="file" id="v-upload">
 
 						</form>
