@@ -34,7 +34,7 @@
   <div id="preloder">
     <div class="loader"></div>
   </div>
-
+  
   <!-- Header section -->
   <header class="header-section">
     <div class="container">
@@ -48,14 +48,15 @@
           </div>
         </div>
         <div class="col-lg-9 col-md-9">
-         
+          <a href="#" id="button" class="site-btn2 header-btn">Login</a>
+          <a href="index.html#sign" class="site-btn header-btn">Sign Up</a>
   
           <nav class="main-menu">
             <ul>
               <li><a href="index.html">Home</a></li>
-              <li><a href="#">About us</a></li>
+              <li><a href="index.html#about">About us</a></li>
               <li><a href="index.html#here">Courses</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="index.html#contact">Contact</a></li>
   
             </ul>
           </nav>
@@ -64,8 +65,31 @@
     </div>
   </header>
   <!-- Header section end -->
+  <!-- popup -->
+  <div class="popup">
+    <div class="popup-content">
+      <img src="https://icons.iconarchive.com/icons/hopstarter/sleek-xp-basic/256/Close-2-icon.png" alt="Close"
+        id="close">
+      <input type="text" placeholder="Username">
+      <input type="password" placeholder="Password">
+      <a href="#" id="login" class="button">Login</a>
+    </div>
+  </div>
+  
+  <script>
+    document.getElementById("button").addEventListener("click", function () {
+      document.querySelector(".popup").style.display = "flex";
+    })
 
-
+    document.getElementById("close").addEventListener("click", function () {
+      document.querySelector(".popup").style.display = "none";
+    })
+    document.getElementById("login").addEventListener("click", function () {
+      document.querySelector(".popup").style.display = "none";
+    })
+  </script>
+  <!-- popup end -->
+  
   <!-- Hero section -->
   <br>
   <br>
@@ -73,9 +97,9 @@
     <div class="container">
       <div class="hero-text text-white">
         <h2>Let Us Make Learning Easy</h2>
-
+  
       </div>
-
+  
     </div>
   </section>
   <!-- Hero section end -->
@@ -97,7 +121,7 @@
               </div>
               <div class="ci-text">
                 <h5>Physics</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur</p>
+                
                 <span><a href="https://www.youtube.com/playlist?list=PLbu_fGT0MPsuUzCT6BZvto0hkcA3dEigi"><i class="fas fa-arrow-right fa-3x"></i></a></span>
               </div>
             </div>
@@ -114,7 +138,7 @@
               </div>
               <div class="ci-text">
                 <h5>Maths</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur</p>
+                
               <span><a href="https://www.youtube.com/playlist?list=PLbu_fGT0MPssea8Yb0bov4v0o_0xfT9Qr"><i class="fas fa-arrow-right fa-3x"></i></a></span>
               </div>
             </div>
@@ -131,7 +155,7 @@
               </div>
               <div class="ci-text">
                 <h5>Chemistry</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur</p>
+               
             <span><a href="https://www.youtube.com/playlist?list=PLbu_fGT0MPsuT9pmkl2RuowDlIQ0OXI0l"><i class="fas fa-arrow-right fa-3x"></i></a></span>
               </div>
             </div>
